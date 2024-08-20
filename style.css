@@ -1,0 +1,139 @@
+/*** FONTS ***/
+@font-face {
+    font-family: Texgyreadventor;
+    src: url(fonts/texgyreadventor-regular.otf);
+  }
+  @font-face {
+    font-family: Texgyreadventor;
+    src: url(fonts/texgyreadventor-italic.otf);
+    font-style: italic;
+  }
+  @font-face {
+    font-family: Texgyreadventor;
+    src: url(fonts/texgyreadventor-bold.otf);
+    font-weight: bold;
+  }
+
+/* TYPOGRAFIE */
+body {
+    font-family: Texgyreadventor, sans-serif;
+    font-size: 100%;
+ }
+ a, a:visited, a:hover, a:active {
+    text-decoration:none;
+ }
+ header, footer {
+    text-align: center;
+ }
+
+ /* KLEURENSCHEMAS */
+ body {
+    background:#A59887;
+    color:#ffffff;
+ }
+ header, footer {
+    background-color: #656043;
+    color: #0B141D;
+ }
+ .container {
+    background-color: #0B141D;
+ }
+ span {
+    color: #656043;
+ }
+ a {
+    color: #6f1481;
+ }
+ /**** STRUCTUUR EN LAY-OUT ****/
+ html, body { 
+    min-height: 100vh;
+ }
+
+ body { 
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.wrapper {
+   flex-grow: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+ h1 {
+    margin-bottom: 2em;
+ }
+ #overzicht h1 {
+    margin-bottom: 1em;
+ }
+.container { 
+    width: 33.75em;
+    height: 22.5em;
+    text-align: center;
+    box-shadow: 5px 10px 8px #3D3540;
+    margin: 2rem auto;
+}
+
+#overzicht {
+    height: auto;
+}
+.feedback {
+    background-color: #A59887;
+    margin-top: 1em;
+    font-weight: bold;
+}
+table {
+    margin: 0 auto;
+}
+
+footer, header {
+    width: 100%;
+}
+/**** Select Style ****/
+select {
+    appearance: none;
+    width: 18.75em;
+    height: 2em;
+    border: 2px solid #727272;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: lightgray;
+    font-family: inherit;
+    text-align: center;
+}
+/**** Input Style ****/
+input[type="number"] {
+    background-color: lightgray;
+    font-family: inherit;
+    text-align: center;
+}
+input[type="submit"], button {
+    appearance: none;
+    cursor: pointer;
+    width: 7.75em;
+    height: auto;
+    border: none;
+    border-radius: 3px;
+    background-color: #463A24;
+    font-family: inherit;
+    color: white;
+
+}
+
+.info {
+    box-shadow: 0px 2px 2px gray;
+}
+
+
+@media screen and (max-width: 768px) {
+   .container { 
+      width: 22.75em;
+      height: 20.5em;
+      text-align: center;
+      box-shadow: 5px 10px 8px #3D3540;
+  }
+}
+
